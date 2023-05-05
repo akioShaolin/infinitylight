@@ -1,7 +1,52 @@
+//
+#include <Arduino.h>
+#include <ESP8266.h>
 
+//OTA libraries
+#include <ESP8266WiFi.h>
+#include <ESP8266mDNS>
+#include <WiFiUdp.h>
+#include <ArduinoOTA.h>
+
+//File System libraries
+#include <FS.h>
+
+/*
+OTA - Wi-Fi
+https://blog.eletrogate.com/atualizando-o-esp8266-via-ota-wi-fi/
+
+ESP8266 Library documentation
+https://github.com/Hieromon/ESP8266
+
+ESP8266 NodeMCU PWM with Arduino IDE - Dim LED (Analog Output)
+https://randomnerdtutorials.com/esp8266-pwm-arduino-ide/
+
+Filesystem
+https://arduino-esp8266.readthedocs.io/en/latest/filesystem.html
+
+Blynk IOT
+https://www.blogdarobotica.com/2022/01/04/conhecendo-o-blynk-2-0-a-nova-plataforma-do-blynk/
+*/
+
+
+/*
+        Functions:
+    • PWM on D4 pin
+    • Web or App interface to control ESP8266 through smartphone
+    • Wifi interrupter and intensity controller
+    • Music Responsible (intensity of light)
+
+        Features:
+    • File System
+    • Wi-Fi comunication
+    • Webpage or Blynk ioT
+    • Analog Write
+    • OTA (Over the air) Wi-Fi
+    • Wi-Fi Client (Slave) and Wi-Fi Server (Master)
+*/
 
 void setup {
-
+    pinMode(D4, OUTPUT);
 }
 
 void loop {
